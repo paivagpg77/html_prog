@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página inicial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Área de Cadastro</h1>
+
+    <form action="/enviar" method="post">
+        <label for="nome">Nome</label><br>
+        <input type="text" name="nome" id="nome"><br><br>
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha">
+
+        <span>Você é:</span>
+        <div class="botoes">
+            <button type="button" onclick="IrParaAluno()">Sou Aluno(a)</button>
+            <button type="button" onclick="IrParaProf()">Sou Professor(a)</button>
+        </div>  
+    </form>
+</div>
+<script>
+    function IrParaAluno() {
+        window.location.href = "aluno.html";
+    }
+    function IrParaProf(){
+        window.location.href = "professor.html";
+    }
+</script>
+</body>
+</html>
